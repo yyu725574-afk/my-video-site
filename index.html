@@ -2,45 +2,48 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>我的影片</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      text-align: center;
       padding: 20px;
     }
     h1 {
-      color: #333;
+      margin-bottom: 30px;
     }
-    .video-list {
-      list-style: none;
-      padding: 0;
+    .video {
+      margin-bottom: 40px;
     }
-    .video-item {
-      margin-bottom: 16px;
-    }
-    .video-item a {
-      text-decoration: none;
-      color: #1a0dab;
-      font-size: 18px;
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
     }
   </style>
 </head>
 <body>
 
   <h1>我的影片</h1>
-  <ul class="video-list">
-    <li class="video-item">
-      <a href="https://youtu.be/ZLSTShPS6-M" target="_blank">
-        成功用近端執行3個遊戲
-      </a>
-    </li>
-    <li class="video-item">
-      <a href="https://youtu.be/TYPgwPmYUSQ" target="_blank">
-        玩遊戲
-      </a>
-    </li>
-  </ul>
+
+  <div class="video">
+    <h2>成功用近端執行3個遊戲</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/ZLSTShPS6-M"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video">
+    <h2>玩遊戲</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/TYPgwPmYUSQ"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
 
 </body>
 </html>
